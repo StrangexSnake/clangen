@@ -43,5 +43,118 @@
 				"dislike": "increase"
 			}
 		}
+	},
+    {
+        "id": "group_4_negative_spar",
+        "cat_amount": 4,
+        "intensity": "low",
+        "interactions": ["Under the orders to improve their strenght, m_c and r_c1 arrange a spar against r_c2 and r_c3. In a turn of event, m_c and r_c1 display no mercy against their chosen opponents, and rather celebrated the unrestrained tussle. r_c2 and r_c3 snarl silently as they collect themselves."],
+        "relationship_constraint": {
+            "m_c_to_r_c2": ["dislike_10"],
+            "r_c1_to_r_c2": ["dislike_10"],
+            "m_c_to_r_c3": ["dislike_10"],
+            "r_c1_to_r_c3": ["dislike_10"]
+        },
+        "specific_reaction":{
+            "m_c_to_r_c1": {
+                "comfortable": "increase"
+            },
+            "m_c_to_r_c2": {
+                "platonic": "decrease",
+                "dislike": "increase"
+            },
+            "r_c1_to_r_c2": {
+                "platonic": "decrease",
+                "dislike": "increase"
+            },
+            "r_c2_to_m_c":{
+                "dislike": "increase"
+            },
+            "r_c2_to_r_c1":{
+                "dislike": "increase"
+            },
+            "m_c_to_r_c3": {
+                "platonic": "decrease",
+                "dislike": "increase"
+            },
+            "r_c1_to_r_c3": {
+                "platonic": "decrease",
+                "dislike": "increase"
+            },
+            "r_c3_to_m_c":{
+                "dislike": "increase"
+            },
+            "r_c3_to_r_c1":{
+                "dislike": "increase"
+            }
+        }
+    },
+    {
+        "id": "group_4_negative_leader",
+        "cat_amount": 4,
+        "intensity": "medium",
+        "interactions": [
+            "During a raid against a rival Clan, with the orders from m_c, r_c1, r_c2, and r_c3 was ordered to locate and sabotage the herb storage, and if met any hostiles, destory them. However, inside the medicine den, a molly and her kits tried to stay hidden seeing the invading warriors. While r_c1 knew they had direct orders, r_c2 and r_c3 believe this was going too far and tried to halt r_c1! While the tussle was happening, m_c snuck up behind the group to slaughter the molly and her kits, looking at the rebels with a silent glare afterward."
+        ],
+        "status_constraint": {
+        "m_c": [
+            "leader"
+         ],
+        "r_c1": [
+            "warrior",
+            "deputy"
+         ],
+        "r_c2": [
+            "warrior"
+         ],
+         "r_c3": [
+            "warrior"
+         ]
+    },
+    "trait_constraint": {
+        "m_c": ["bloodthirsty", "vengeful", "fierce", "bold"]
+        },
+        "relationship_constraint": {
+            "m_c_to_r_c2": ["dislike_10"],
+            "r_c1_to_r_c2": ["dislike_10"],
+            "m_c_to_r_c3": ["dislike_10"],
+            "r_c1_to_r_c3": ["dislike_10"]
+        },
+        "specific_reaction":{
+            "m_c_to_r_c1": {
+                "comfortable": "increase",
+                "trust": "increase"
+            },
+            "m_c_to_r_c2": {
+                "platonic": "decrease",
+                "dislike": "increase",
+                "trust": "decrease"
+            },
+            "r_c1_to_r_c2": {
+                "platonic": "decrease",
+                "dislike": "increase"
+            },
+            "r_c2_to_m_c":{
+                "dislike": "increase"
+            },
+            "r_c2_to_r_c1":{
+                "dislike": "increase"
+            },
+            "m_c_to_r_c3": {
+                "platonic": "decrease",
+                "dislike": "increase",
+                "trust": "decrease"
+            },
+            "r_c1_to_r_c3": {
+                "platonic": "decrease",
+                "dislike": "increase"
+            },
+            "r_c3_to_m_c":{
+                "dislike": "increase"
+            },
+            "r_c3_to_r_c1":{
+                "dislike": "increase"
+            }
+        }
 	}
 ]

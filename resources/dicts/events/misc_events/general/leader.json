@@ -38,5 +38,24 @@
       "camp": "any",
       "tags": ["Newleaf", "Greenleaf", "Leaf-fall", "Leaf-bare", "war"],
       "event_text": "m_c is forced to be a symbol of strength and unity for their clan, even in the face of their own doubts and fears."
+    },
+    {
+        "camp": "any",
+        "tags": ["other_clan", "war", "Newleaf", "Greenleaf", "Leaf-fall", "Leaf-bare"],
+        "event_text": "In the thick of the night, m_c agreed to set up a meeting with the leader of o_c. At the end of the meeting, with a purring smile, m_c and the o_c leader found a mutual peace for their Clans for the time being.",
+        "cat_trait": null,
+        "cat_skill": null,
+        "other_cat_trait": null,
+        "other_cat_skill": null
+    },
+    {
+        "camp": "any",
+        "tags": ["other_clan", "war", "Newleaf", "Greenleaf", "Leaf-fall", "Leaf-bare"],
+        "event_text": "In the thick of the night, m_c agreed to set up a meeting with the leader of o_c. At the end of the meeting, however, the two leaders couldn't agree on any points, leaving the two frustrated and called off the amity.",
+        "cat_trait": null,
+        "cat_skill": null,
+        "other_cat_trait": null,
+        "other_cat_skill": null
+
     }
 ]

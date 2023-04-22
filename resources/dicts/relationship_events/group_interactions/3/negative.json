@@ -118,7 +118,10 @@
 	{
 		"id": "group_3_leader_neg2",
 		"cat_amount": 3,
-		"interactions": ["m_c and r_c1 discuss where they should be marking the border. r_c2 overhears, and disagrees with their decision, causing m_c and r_c1 to sneer at them in distaste."],
+		"interactions": [
+			"m_c and r_c1 discuss where they should be marking the border. r_c2 overhears, and disagrees with their decision, causing m_c and r_c1 to sneer at them in distaste.",
+			"To make sure {PRONOUN/m_c/poss} warriors to up to {PRONOUN/m_c/poss} standards, m_c forces r_c2 and r_c3 to battle a rival Clan cat. However, r_c2 suddenly grew a heart as {PRONOUN/r_c2/subject} saw r_c1 slicing a cat apart, thus attack {PRONOUN/r_c2/poss} Clanmate to set them free. After m_c throw {PRONOUN/m_c/self} to break apart the fight, {PRONOUN/m_c/subjec} glare at r_c2."
+	    ],
 		"status_constraint": {
 			"m_c": [
 				"leader"
@@ -164,5 +167,78 @@
 				"trust": "decrease"
 			}
 		}
+	},
+    {
+        "id": "group_3_leader_neg3",
+        "cat_amount": 3,
+        "intensity": "high",
+        "interactions": [
+            "Having enough with the senseless battles, r_c2, with the falsehood of wanting a peaceful meeting with m_c, betrayed {PRONOUN/r_c2/poss} leader with a cowardly ambush! Not realizing r_c1 followed {PRONOUN/r_c2/object}, r_c2 was shock to be under their razor claws and fury yowls! m_c smiles at r_c1 with a bleeding smile.",
+            "Listening and agreeing to outside forces, r_c2 came to the conclusion to get rid of m_c and take {PRONOUN/m_c/poss} place. While m_c was slumbering in {PRONOUN/m_c/poss} nest, r_c2 sneaks into the den in the dead of night, then, in the single bound, aim for the yowling cat's throat! r_c1 wasn't far to hear {PRONOUN/r_c1/poss} leader in dire trouble, and quickly settle things down and pen r_c2 between fangs and claws.",
+            "With the aid of r_c1, m_c finally captured the loner louging uninvited on their territories. With claws to their throat, m_c would've enjoyed {PRONOUN/m_c/poss} new toy if it wasn't for r_c2 slamming into {PRONOUN/m_c/object}, yowling for the loner to escape! r_c2 will now take their place as the chewing toy..."
+        ],
+        "get_injuries": {
+            "m_c": {
+                "injury_names": ["claw-wound"],
+                "scar_text": "m_c got a scar after r_c2 ambush them.",
+                "death_text": "Died after r_c2 ambush them.",
+                "death_leader_text": "after r_c2 ambush them."
+            },
+            "r_c2": {
+                "injury_names": ["claw-wound", "bite-wound"],
+                "scar_text": "r_c2 ambush m_c, was punished by r_c1 and got a scar as memory of their actions.",
+                "death_text": "They ambush m_c, was punished by r_c1 and in the cause of their actions, r_c2 died.",
+                "death_leader_text": "after ambush m_c and got punished by r_c1"
+            }
+        },
+        "status_constraint": {
+            "m_c": [
+                "leader"
+            ],
+            "r_c1": [
+                "warrior",
+                "deputy"
+            ],
+            "r_c2": [
+                "warrior"
+            ]
+        },
+        "trait_constraint": {
+            "m_c": [
+                "bloodthirsty",
+                "vengeful", 
+                "fierce"
+            ]
+        },
+        "specific_reaction": {
+            "m_c_to_r_c1": {
+                "dislike": "decrease",
+                "comfortable": "increase",
+                "trust": "increase"
+            },
+            "r_c1_to_m_c": {
+                "dislike": "increase",
+                "comfortable": "decrease",
+                "trust": "increase"
+            },
+            "r_c1_to_r_c2": {
+                "platonic": "decrease",
+                "dislike": "increase",
+                "comfortable": "decrease",
+                "trust": "decrease"
+            },
+            "r_c2_to_r_c1": {
+                "platonic": "decrease",
+                "dislike": "increase",
+                "comfortable": "decrease",
+                "trust": "decrease"
+            },
+            "r_c2_to_m_c": {
+                "platonic": "decrease",
+                "dislike": "increase",
+                "comfortable": "decrease",
+                "trust": "decrease"
+			}
+        }
 	}
 ]

@@ -206,5 +206,32 @@
         "cat_skill": null,
         "other_cat_trait": null,
         "other_cat_skill": null
+    },
+    {
+        "camp": "any",
+        "tags": ["Newleaf", "Greenleaf", "Leaf-fall", "Leaf-bare", "other_clan"],
+        "event_text": "m_c was seen secretly meeting with a o_c cat designing a plan of a revolt...",
+        "cat_trait": "bloodthirsty",
+        "cat_skill": null,
+        "other_cat_trait": null,
+        "other_cat_skill": null
+    },
+    {
+        "camp": "any",
+        "tags": ["other_cat", "Newleaf", "Greenleaf", "Leaf-fall", "Leaf-bare"],
+        "event_text": "Thinking there was no more worth to the Clan, m_c tries to convince r_c to run away with {PRONOUN/m_c/object}. However, r_c refuse to leave the safety of the Clan, but {PRONOUN/r_c/subject} promise not to speak of m_c's possible betrayal.",
+        "cat_trait": null,
+        "cat_skill": null,
+        "other_cat_trait": null,
+        "other_cat_skill": null
+    },
+    {
+        "camp": "any",
+        "tags": ["other_cat", "Newleaf", "Greenleaf", "Leaf-fall", "Leaf-bare"],
+        "event_text": "Thinking there was no more worth to the Clan, m_c tries to convince r_c to run away with {PRONOUN/m_c/object}. However, r_c refuse to leave the safety of the Clan and declear m_c a disloyal Clanmate. Later on, r_c, through wavering lips, speak of m_c's betrayal to the leader.",
+        "cat_trait": null,
+        "cat_skill": null,
+        "other_cat_trait": null,
+        "other_cat_skill": null
     }
 ]
