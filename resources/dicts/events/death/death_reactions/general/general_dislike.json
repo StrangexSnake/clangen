@@ -10,16 +10,16 @@
       "With m_c sadly gone from this world, r_c didn't take much to openly mock the decease cat's flaws and mistakes for the Clan. With them gone, {PRONOUN/r_c/subject} believe the Clan can run perfectly now.",
       "Even with m_c's family and friends deeply mourned at the vigil, r_c boldly claimed {PRONOUN/m_c/subject} weren't cut out to be part of this Clan.",
       "Although not a single emotion emitted from r_c during the vigil, {PRONOUN/r_c/subject} secretly mutter a tiny pray for m_c to travel safetly to StarClan."
-
-    ],
+    ]
+  },
     "no_body": [
       "Nobody wants to admit such a terrible thing out loud, but m_c will not be missed by the whole Clan. r_c wanders past the vigil being held for {PRONOUN/m_c/object}, pointedly ignoring it.",
       "r_c wanders past m_c's vigil. {PRONOUN/r_c/subject/CAP} won't mourn m_c's passing.",
       "Frankly, they're all better off without m_c, and r_c doesn't know why everyone else is so grief stricken.",
       "Yes, {PRONOUN/r_c/subject} hated m_c, but m_c was {PRONOUN/r_c/poss} Clanmate first and foremost, and r_c bows {PRONOUN/r_c/poss} head at the vigil respectfully."
-
+    
     ]
-  },
+ },
   "adventurous": {
     "body": [
 
