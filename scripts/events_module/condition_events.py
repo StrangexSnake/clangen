@@ -85,7 +85,8 @@ class Condition_Events():
     @staticmethod
     def handle_illnesses(cat, season=None):
         """ 
-        This function handles overall the illnesses in 'expanded' (or 'cruel season') game mode
+        This function handles overall the illnesses in 'expanded' (or 'cruel season') game mode.
+        It will return a bool to indicate if the cat is dead.
         """
         # return immediately if they're already dead or in the wrong game-mode
         triggered = False
@@ -105,6 +106,13 @@ class Condition_Events():
             random_number = int(
                 random.random() * game.get_config_value("condition_related", f"{game.clan.game_mode}_illness_chance"))
             if not cat.dead and not cat.is_ill() and random_number <= 10 and not event_string:
+
+                # CLAN FOCUS!
+                if game.clan.clan_settings.get("rest and recover"):
+                    stopping_chance = game.config["focus"]["rest and recover"]["illness_prevent"]
+                    if not int(random.random() * stopping_chance):
+                        return triggered
+
                 season_dict = Condition_Events.ILLNESSES_SEASON_LIST[season]
                 possible_illnesses = []
 
@@ -191,6 +199,12 @@ class Condition_Events():
                 triggered = True
 
             if triggered:
+                # CLAN FOCUS!
+                if game.clan.clan_settings.get("rest and recover"):
+                    stopping_chance = game.config["focus"]["rest and recover"]["injury_prevent"]
+                    if not int(random.random() * stopping_chance):
+                        return False
+
                 if war:
                     other_clan = enemy_clan
                 else:
@@ -222,7 +236,6 @@ class Condition_Events():
                         involved_cats.append(other_cat.ID)
                         Condition_Events.handle_relationship_changes(cat, injury_event, other_cat)
 
-                    #print(injury_event.event_text)
                     text = event_text_adjust(Cat, injury_event.event_text, cat, other_cat, other_clan_name)
 
                     if game.clan.game_mode == "classic":
@@ -297,7 +310,7 @@ class Condition_Events():
     def handle_relationship_changes(cat, injury_event, other_cat):
         cat_to = None
         cat_from = None
-        n = 20
+        n = game.config["relationship"]["influence_condition_events"]
         romantic = 0
         platonic = 0
         dislike = 0
@@ -659,19 +672,22 @@ class Condition_Events():
         for condition in conditions:
 
             # checking if the cat has a congenital condition to reveal and handling duration and death
+            prev_lives = game.clan.leader_lives
             status = cat.moon_skip_permanent_condition(condition)
 
             # if cat is dead, break
-            if cat.dead:
+            if cat.dead or game.clan.leader_lives < prev_lives:
                 triggered = True
                 event_types.append("birth_death")
                 event = f"{cat.name} died from complications caused by {condition}."
+                if cat.status == "leader" and game.clan.leader_lives >= 1:
+                    event = f"{cat.name} lost a life to {condition}."
                 event_list.append(event)
 
                 if cat.status != 'leader':
                     History.add_death(cat, death_text=event)
                 else:
-                    History.add_death(cat, death_text=f"killed by complications caused by {condition}")
+                    History.add_death(cat, death_text=f"died to {condition}")
 
                 game.herb_events_list.append(event)
                 break
@@ -970,7 +986,6 @@ class Condition_Events():
                 else:
                     print("No herbs to use for this injury")
                     return
-                print(f"New herb found: {herb_used}")
 
             # deplete the herb
             amount_used = 1

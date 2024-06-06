@@ -134,7 +134,8 @@ class Game():
         'window_open': False,
         'skip_conditions': [],
         'show_history_moons': False,
-        'fps': 30
+        'fps': 30,
+        'disallowed_symbol_tags': []
     }
     all_screens = {}
     cur_events = {}
@@ -315,7 +316,6 @@ class Game():
         if not clan_list:
             print('No clans found')
             return None
-        # print('Clans found:', clan_list)
         return clan_list
 
     def save_clanlist(self, loaded_clan=None):
@@ -542,8 +542,8 @@ class Game():
 
     def get_config_value(self, *args):
         """Fetches a value from the self.config dictionary. Pass each key as a 
-        seperate arugment, in the same order you would access the dictionary. 
-        This function will apply war modifers if the clan is currently at war. """
+        separate argument, in the same order you would access the dictionary.
+        This function will apply war modifiers if the clan is currently at war. """
 
         war_effected = {
             ("death_related", "leader_death_chance"): ("death_related", "war_death_modifier_leader"),

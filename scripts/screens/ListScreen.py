@@ -238,6 +238,8 @@ class ListScreen(Screens):
             self.show_dead_button.hide()
         else:
             self.show_living_button.hide()
+            if game.sort_type == 'death':
+                game.sort_type = 'rank'
 
         x_pos = 717
         self.choose_group_button = UIImageButton(scale(pygame.Rect((x_pos, y_pos), (380, 68))), "",
@@ -501,7 +503,7 @@ class ListScreen(Screens):
         self.death_status = 'living'
         self.full_cat_list = []
         for the_cat in Cat.all_cats_list:
-            if not the_cat.dead and the_cat.outside:
+            if not the_cat.dead and the_cat.outside and not the_cat.driven_out:
                 self.full_cat_list.append(the_cat)
 
     def get_sc_cats(self):
@@ -528,7 +530,7 @@ class ListScreen(Screens):
         self.death_status = 'dead'
         self.full_cat_list = []
         for the_cat in Cat.all_cats_list:
-            if the_cat.ID in game.clan.unknown_cats and not the_cat.faded:
+            if the_cat.ID in game.clan.unknown_cats and not the_cat.faded and not the_cat.driven_out:
                 self.full_cat_list.append(the_cat)
 
     def update_search_cats(self, search_text):
@@ -573,10 +575,8 @@ class ListScreen(Screens):
         elif self.current_group == 'df':
             self.update_heading_text(f'Dark Forest')
 
-        # If the number of pages becomes smaller than the number of our current page, set
-        #   the current page to the last page
-        if self.list_page > self.all_pages:
-            self.list_page = self.all_pages
+        # clamp current page to a valid page number
+        self.list_page = max(1, min(self.list_page, self.all_pages))
 
         # Handle which next buttons are clickable.
         if self.all_pages <= 1:
