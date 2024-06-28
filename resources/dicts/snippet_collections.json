@@ -1,3 +1,4 @@
+
 {
   "comment": [
     "add new snippets to the relevant list:",
@@ -15,21 +16,21 @@
   "prophecy_list": {
     "sight": {
       "general": [
-        ["blood pooling on the ground", "blood dripping from a leaf"],
-        ["spread claws", "a cat's paw devoid of claws"],
-        ["snarling teeth", "bloodied teeth"],
+        ["blood pooling on the ground", "blood dripping from a leaf", "blood leaking from crooked fangs"],
+        ["spread claws", "a cat's paw devoid of claws", "a cat's claws replaced with dog teeth"],
+        ["snarling teeth", "bloodied teeth", "broken teeth"],
         ["a bird's feather"],
         ["soft fur"],
         ["sunlight glinting off a plant"],
         ["pouring rain", "storms never-ending", "a rainstorm on a sunny day"],
-        ["hail pounding the ground"],
+        ["hail pounding the ground", "hail stattering the lands"],
         ["snow falling softly", "a blizzard raging"],
-        ["wind howling"],
-        ["bright sunshine", "the sun", "the sun blotted out by a great shadow", "a wolf eating the sun", "a cat pulling the sun from the sky", "a rabbit stealing the sun", "a warrior's form blocking the sun"],
+        ["wind howling", "wind singing"],
+        ["bright sunshine", "the sun", "the sun blotted out by a great shadow", "a wolf eating the sun", "a cat pulling the sun from the sky", "a rabbit stealing the sun", "a warrior's form blocking the sun", "two suns clashing"],
         ["blinding light", "a trail of light stretching through the camp"],
         ["blazing heat"],
         ["dark clouds", "a bloody red cloud", "rolling clouds", "clouds covering the sky", "a single beam of moonlight from the clouds"],
-        ["rushing fire", "fire engulfing a cat", "fire covering the camp", "fire trapped in stone", "the camp in flames", "an animal leaping from flames"],
+        ["rushing fire", "fire engulfing a cat", "fire covering the camp", "fire trapped in stone", "the camp in flames", "an animal leaping from flames", "cats leaping into the flames"],
         ["flooding water", "water flowing upwards"],
         ["mud splattered on the rocks"],
         ["rocks falling"],
@@ -60,9 +61,9 @@
         ["a twig burning from both ends"],
         ["the grin of a wolf"],
         ["a lost object finally returned", "a missing possession finally found"],
-        ["a figure with the voice of StarClan"],
+        ["a figure with the voice of StarClan", "a figure with a voice filled with smoke"],
         ["a cat not yet born"],
-        ["a cat nearly forgotten"],
+        ["a cat nearly forgotten", "a cat not recongzing their pelt"],
         ["a cat covered in blood"],
         ["a cat standing beside a Twoleg"],
         ["stones dissolving in water"]
@@ -76,7 +77,8 @@
 
       ],
       "beach": [
-        
+        ["a black-tar sea"]
+
       ],
       "mountainous": [
 
@@ -92,7 +94,7 @@
         ["howling in the distance", "a distant howl of pain", "cats howling to the moon"],
         ["a monster roaring"],
         ["the purring of a friend", "the purr of an enemy", "the purr of a mother", "a rumbling purr"],
-        ["the squeak of prey being killed", "the squeal of dying prey"],
+        ["the squeak of prey being killed", "the squeal of dying prey", "the squeal of a dying cat mimicing a prey"],
         ["a bird call", "bird song on a clear morning"],
         ["crashing waves", "the roar of waves in the distance"],
         ["the sounds of battle", "the screams of fighting cats"],
@@ -102,7 +104,7 @@
         ["the sound of a heartbeat"],
         ["a whispered message", "whispers of hope long past"],
         ["a dying promise"],
-        ["a cat's final words"]
+        ["a cat's final words", "a cat's final words wanting revenge", "a cat's final words wanting peace"]
 
       ],
       "forest": [
@@ -151,7 +153,7 @@
         ["the feeling of flight"],
         ["a half-remembered promise"],
         ["a foreboding feeling"],
-        ["the embrace of a family"]
+        ["the embrace of a family", "the embrace of a found family"]
       ],
       "forest": [
 
@@ -205,22 +207,22 @@
         ["a piece of fresh prey already rotting"],
         ["a shell shining with the colors of water"],
         ["a branch that looks whole but comes apart with a gentle touch", "a stick rotted through"],
-        ["a three-eyed fish"],
+        ["a three-eyed fish", "a half-eaten fish still swimming", "a perfectly half-cut fish"],
         ["a two-headed adder", "a dead snake eating it's own tail", "a perfectly shed snake-skin"],
         ["a glowing bug fallen into the middle of camp"],
         ["a pawprint of red on rock"],
-        ["destroyed herbs", "wilting herbs"],
+        ["destroyed herbs", "wilting herbs", "herbs covered in red"],
         ["a bird's broken egg", "a perfectly intact yet hollow bird's egg"],
         ["a dew covered spider's web"],
         ["a torn collar"],
-        ["the bones of freshkill", "a cracked mouse skull", "a cracked rabbit skull"],
+        ["the bones of freshkill", "a cracked mouse skull", "a cracked rabbit skull", "a hill made of cat bones"],
         ["a shining beetle shell"],
         ["a green moth"],
         ["an emaciated vole", "an emaciated rabbit", "an emaciated mouse"],
         ["a headless centipede"],
         ["an abandoned bee-stinger"],
         ["a miraculously burning reed"],
-        ["a shed whisker"]
+        ["a shed whisker", "a broken whisker"]
       ],
       "forest": [
 
@@ -295,6 +297,7 @@
     },
     "touch": {
       "general": [
+        ["a cat's paw engulf in flames"]
 
       ],
       "forest": [
@@ -315,13 +318,13 @@
   "dream_list": [
     ["hunger", "starvation", "gluttony", "ravenous hunger"],
     ["cold", "warmth", "heat", "burning", "freezing"],
-    ["loneliness", "apathy", "numbness"],
+    ["loneliness", "apathy", "numbness", "ostracize"],
     ["irritation", "exasperation", "annoyance", "aggravation", "agitation", "vexation", "ire"],
     ["want", "need", "longing", "yearning", "craving"],
-    ["loss", "grief", "heartache", "melancholy", "depression"],
-    ["a crush", "love", "romance", "desire"],
+    ["loss", "grief", "heartache", "melancholy", "depression", "cede"],
+    ["a crush", "love", "romance", "desire", "obsession"],
     ["hate", "hatred", "loathing", "contempt", "malice"],
-    ["admiration", "respect", "esteem", "reverence", "hero worship"],
+    ["admiration", "respect", "esteem", "reverence", "hero worship", "legendary"],
     ["disapproval", "scorn", "displeasure", "condemnation", "distaste", "censure", "belittlement", "reproach"],
     ["ambition", "drive", "determination", "motivation", "aspiration", "assertiveness"],
     ["self-assurance", "confidence", "self-confidence", "pride", "self-worth"],
@@ -329,17 +332,17 @@
     ["envy", "jealousy", "spite"],
     ["parental pride", "maternal pride", "paternal pride", "parental worry", "maternal worry", "paternal worry"], 
     ["selflessness", "altruism", "benevolence"],
-    ["calm", "peace", "serenity", "tranquility"],
-    ["anxiety", "nervousness", "worry"],
-    ["happiness", "joy", "satisfaction", "glee"],
+    ["calm", "peace", "serenity", "tranquility", "sedate"],
+    ["anxiety", "nervousness", "worry", "skittish"],
+    ["happiness", "joy", "satisfaction", "glee", "boyouce"],
     ["contentment", "relaxation", "bliss", "purring pleasure", "delight"],
     ["pain", "hurt", "anugish", "agony", "suffering", "torment"],
-    ["discomfort", "sting", "ache", "sore", "tender pang"],
+    ["discomfort", "sting", "ache", "sore", "tender pang", "writhe"],
     ["vengeful thoughts", "vengeance", "revenge", "retaliation", "retribution", "payback"],
     ["achievement", "triumph", "victory", "accomplishment", "fulfillment", "success"],
-    ["sorrow", "despondance", "misery", "gloom", "woe"],
+    ["sorrow", "despondance", "misery", "gloom", "woe", "forlorn"],
     ["turmoil", "unrest", "tension", "upheaval", "turbulence", "unease"],
-    ["horror", "terror", "fear", "foreboding", "dread"],
+    ["horror", "terror", "fear", "foreboding", "dread", "appall"],
     ["danger", "risk", "peril", "jeopardy", "threat", "imperilment"],
     ["intuition", "premonition", "shrewd perception", "foreknowledge"],
     ["bloodlust", "bloodthirst", "barbarity", "cruelty", "ruthlessness", "malignity"],
@@ -350,7 +353,7 @@
     ["curiosity", "inquisitiveness", "wonder", "wondering", "nosiness"],
     ["inspiration", "an idea", "an impluse"],
     ["playfulness", "mischief", "friskiness", "impish energy", "roguishness", "kitten-like gaiety"],
-    ["excitement", "thrill", "invigorated", "surprise", "exhilaration"],
+    ["excitement", "thrill", "invigorated", "surprise", "exhilaration", "jubilant"],
     ["secrecy", "concealment", "stealth", "discretion", "subterfuge", "deceit"],
     ["guilt", "shame", "chagrin"],
     ["cattiness", "petty malice", "bitterness", "asperity"],
@@ -376,8 +379,9 @@
         ["the sounds of a heated argument"],
         ["near silent pawsteps"],
         ["the soft noises of kits nursing"],
-        ["a peal of laughter"],
-        ["distant wails of grief"]
+        ["a peal of laughter", "a carouses celebration"],
+        ["distant wails of grief"],
+        ["a decrepit voice"]
       ],
       "forest": [
 
@@ -415,24 +419,24 @@
     "emotional": {
       "general": [
         ["blood spilt in battle", "a battle from long ago", "the terror of a battle field"],
-        ["a war won", "a battle lost"],
+        ["a war won", "a battle lost", "an interminable war"],
         ["an old rendezvous", "a friendly meeting", "a truce between enemies"],
         ["a cat's last breath"],
         ["a promise kept", "a half-remembered promise", "a promise already broken", "a promise not yet made"],
         ["a story half-remembered"],
         ["the excitement of an apprentice", "an apprentice's vigor", "the naivety of an apprentice"],
         ["the strength of a warrior", "the steadfastness of a warrior", "a warrior's loyalty"],
-        ["the ache of an elder's bones", "an elder's wisdom"],
-        ["drowning"],
+        ["the ache of an elder's bones", "an elder's wisdom", "an elder keeping traditions"],
+        ["drowning", "burning alive", "bleeding out", "crushing", "choking"],
         ["lingering grief", "grief's sharp impact"],
         ["a newborn's innocence","the loss of innocence"],
-        ["a memory being forgotten", "a fading memory", "a memory long lost"],
+        ["a memory being forgotten", "a fading memory", "a memory long lost", "a memory not wanted"],
         ["forgetting something important", "forgetting a secret once precious"],
         ["wishing for something now missing", "longing for a long lost possession"],
         ["hatred for a dear friend"],
         ["knowing a secret that can never be revealed"],
         ["a truth unbelieved", "a truth concealed", "a truth never revealed"],
-        ["a weakness in their legs"],
+        ["a weakness in their legs", "a weakness in their heart"],
         ["a belly so empty they feel nauseous"],
         ["a home no longer welcoming", "a home long lost", "a home once forgotten"],
         ["oozing corruption"]
@@ -457,7 +461,7 @@
         ["falling through the air", "flying through the air"],
         ["the warmth of a parent", "the embrace of a family","the warmth of family in the darkness before a kit's eyes open"],
         ["tails entwining", "the slip of wet fur", "teeth snapping against fur", "claws against a scruff"],
-        ["a mentor's touch to an apprentice's forehead"],
+        ["a mentor's touch to an apprentice's forehead", "an apprentice refusing a mentor touching their forehead"],
         ["slipping on muddy earth despite the dry ground", "sinking into muddy earth"],
         ["paws damp with water", "paws damp with blood", "paws heavy with blood"],
         ["another cat's violent shove"],
@@ -481,7 +485,7 @@
       "general": [
         ["the bitter taste of poppy seeds", "the taste of bitter herbs", "the taste of blood in the air"],
         ["the lingering taste of iron on the tongue"],
-        ["the volatile taste of berries"]
+        ["the volatile taste of berries", "the mixture of iron and rotten berries"]
       ],
       "forest": [
 

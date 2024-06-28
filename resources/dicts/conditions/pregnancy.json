@@ -1,6 +1,8 @@
 {
   "announcement": [
-    "m_c announced that {PRONOUN/m_c/subject} {VERB/m_c/are/is} expecting kits."
+    "m_c announced that {PRONOUN/m_c/subject} {VERB/m_c/are/is} expecting kits.",
+    "With a massive belly appearing, the obvious answer came to m_c: {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} gonna have kits!",
+    "No matter how much m_c try {PRONOUN/m_c/poss} best being collected annoucing {PRONOUN/m_c/poss} expecting kits, {PRONOUN/m_c/poss} vibrating body tells otherwise."
   ],
   "litter_guess": [
     "m_c hopes the litter will be small - {PRONOUN/m_c/subject} {VERB/m_c/feel/feels} overwhelmed at the idea of a big litter.",
@@ -91,7 +93,8 @@
       "m_c purrs sadly over the tiny {insert} StarClan has blessed {PRONOUN/m_c/object} with. {PRONOUN/m_c/subject/CAP} {VERB/m_c/see/sees} r_c in their little pawpads, in their ears and eyes and mews.",
       "Cats call out, but m_c can't be convinced to go back to the nursery. Not with the new {insert} made from {PRONOUN/m_c/object} and r_c there, taunting m_c with what should have been.",
       "Looking down at r_c's last gift to {PRONOUN/m_c/object}, m_c vows to protect {PRONOUN/m_c/poss} new {insert}.",
-      "It's so hard, so very, very, nearly insurmountably hard doing this without {PRONOUN/m_c/poss} mate, but m_c wouldn't change it for the world. This {insert} is the last piece of r_c {PRONOUN/m_c/subject} {VERB/m_c/have/has}."
+      "It's so hard, so very, very, nearly insurmountably hard doing this without {PRONOUN/m_c/poss} mate, but m_c wouldn't change it for the world. This {insert} is the last piece of r_c {PRONOUN/m_c/subject} {VERB/m_c/have/has}.",
+      "It wasn't the {insert} fault for r_c's sudden death, but m_c couldn't help but loathe {PRONOUN/m_c/poss} {insert}. Qualm filled {PRONOUN/m_c/object} when {PRONOUN/m_c/subject} threw tearful yowls at the innocent. The previous joy of parenthood replace with wrongfully blind hatred and sullen."
     ],
     "both_unmated": [
       "m_c's eyes shine with exhaustion and joy after they gave birth to a {insert}. r_c stands protectively by, ready to share the duties of parenthood.",
