@@ -741,6 +741,33 @@
     {
         "camp": "any",
         "tags": [
+            "adoption",
+            "m_c",
+            "Newleaf",
+            "Greenleaf",
+            "Leaf-fall",
+            "Leaf-bare",
+            "war"
+        ],
+        "reputation": [
+            "hostile"
+        ],
+        "event_text": "Despite a wails of a fierce o_c parent wanting to protect their kits, they were quickly subdued with bloodshed claws. Piercing cries of orphaned kits fell on deaf ears as they were taken with new names and m_c as their new parent.",
+        "other_clan": true,
+        "litter": true,
+        "backstory": [
+            "orphaned2",
+            "orphaned5"
+        ],
+        "new_name": true,
+        "cat_trait": null,
+        "cat_skill": null,
+        "other_cat_trait": null,
+        "other_cat_skill": null
+    },
+    {
+        "camp": "any",
+        "tags": [
             "Newleaf",
             "Greenleaf",
             "Leaf-fall",

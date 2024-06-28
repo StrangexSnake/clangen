@@ -183,8 +183,8 @@
 		"base_permanent_condition": 90,
 		"base_male_tortie": 13,
 		"base_female_tortie": 4,
-		"base_heterochromia": 120,
-		"direct_inheritance": 15,
+		"base_heterochromia": 100,
+		"direct_inheritance": 1,
 		"wildcard_tortie": 9,
 		"vit_chance": 8,
 		"random_point_chance": 5
@@ -283,18 +283,18 @@
 		"war_injury_modifier": 100
 	},
 	"clan_creation": {
-		"rerolls": 3,
+		"rerolls": -1,
 		"comment": "Set this to -1 for it to be infinite"
 	},
 	"graduation": {
 		"base_app_timeskip_ex": [[3, 12],[5, 6]],
 		"base_med_app_timeskip_ex": [[2, 7],[2, 3]],
 		"max_apprentice_age": {
-			"medicine cat apprentice": 30,
+			"medicine cat apprentice": 25,
 			"apprentice": 25,
 			"mediator apprentice": 25
 		},
-		"min_graduating_age": 10
+		"min_graduating_age": 14
 	},
 	"outside_ex":{
 		"base_adolescent_timeskip_ex":[[2, 10],[4, 5]],
