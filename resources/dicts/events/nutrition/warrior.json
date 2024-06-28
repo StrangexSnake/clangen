@@ -1,0 +1,26 @@
+[
+    {
+        "camp": "any",
+        "tags": [
+            "Newleaf",
+            "Greenleaf",
+            "Leaf-fall",
+            "Leaf-bare",
+            "starving"
+        ],
+        "death_text": "In a pallor, breathy voice, m_c demand to know why cats shirking their hunting patrols enough to doom the Clan and why they haven't been punished for it.",
+        "history_text": [
+            null,
+            null
+        ],
+        "cat_trait": [
+            "bloodthirsty",
+            "cold",
+            "grumpy",
+            "fierce"
+        ],
+        "cat_skill": null,
+        "other_cat_trait": null,
+        "other_cat_skill": null
+    }
+]
