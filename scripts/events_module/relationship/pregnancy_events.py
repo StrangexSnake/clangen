@@ -500,7 +500,7 @@ class Pregnancy_Events:
             for clan_cat in game.clan.clan_cats:
                 clan_cat_cat = Cat.fetch_cat(clan_cat)
                 if clan_cat_cat:
-                    clan_cat_cat.faith -= round(random.uniform(0,1), 2)
+                    clan_cat_cat.faith+= round(random.uniform(0,1), 2)
 
     # ---------------------------------------------------------------------------- #
     #                          check if event is triggered                         #
@@ -1052,7 +1052,7 @@ class Pregnancy_Events:
 
         # SETTINGS
         # - decrease inverse chance if only mated pairs can have kits
-        if clan.clan_settings["single parentage"]:
+        if not clan.clan_settings["single parentage"]:
             inverse_chance = int(inverse_chance * 0.7)
 
         # - decrease inverse chance if affairs are not allowed

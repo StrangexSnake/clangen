@@ -205,9 +205,9 @@ def load_data():
         except Exception as e:
             logging.exception("File failed to load")
             if not game.switches["error_message"]:
-                game.switches["error_message"] = (
-                    "There was an error loading the cats file!"
-                )
+                game.switches[
+                    "error_message"
+                ] = "There was an error loading the cats file!"
                 game.switches["traceback"] = e
 
     finished_loading = True
@@ -349,7 +349,10 @@ while True:
 
     if game.settings["custom cursor"]:
         if pygame.mouse.get_cursor() == disabled_cursor:
-            pygame.mouse.set_cursor(cursor)
+            try:
+                pygame.mouse.set_cursor(cursor)
+            except:
+                pass
     elif pygame.mouse.get_cursor() == cursor:
         pygame.mouse.set_cursor(disabled_cursor)
     # Draw screens

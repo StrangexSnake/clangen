@@ -157,7 +157,7 @@
         "min_max_status": {},
         "weight": 20,
         "intro_text": "The camp is relatively empty as many cats have gone out to do their daily patrols or hunting, and you decide to help tidy up... and maybe add a decoration or two? You start to have a couple doubts as you gather the materials... is this a good idea?",
-        "decline_text": "No, it's not. You put your things away and go back to the Elder's Den, deciding to just take a nap instead.",
+        "decline_text": "No, it's not. You put your things away and go back to the elder's den, deciding to just take a nap instead.",
         "chance_of_success": 50,
         "success_outcomes": [
             {
@@ -226,7 +226,7 @@
         "max_cats": 2,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "You were just trying to rest, the Warriors out on patrol and the Medicine Cat out gathering herbs, however the squeals of other cats managed to wake you up from your nap. You rush outside, and it seems a snake has slithered its way into the middle of the camp. The cats look to you for help, you are the one in the best condition in the camp at the moment, so they're hoping you'll have a plan.",
+        "intro_text": "You were just trying to rest, the warriors out on patrol and the medicine cat out gathering herbs, however the squeals of other cats managed to wake you up from your nap. You rush outside, and it seems a snake has slithered its way into the middle of the camp. The cats look to you for help, you are the one in the best condition in the camp at the moment, so they're hoping you'll have a plan.",
         "decline_text": "Nope. Nope nope. Nope. You hurry back into the den, not willing to deal with the snake.",
         "chance_of_success": 50,
         "success_outcomes": [
@@ -346,6 +346,76 @@
         "fail_outcomes": [
             {
                 "text": "You accept and begin telling a story to the kit, but partway through, a queen notices you and grabs them, hissing what a horrible influence you are.",
+                "exp": 0,
+                "weight": 20
+            }
+        ]
+    },
+    {
+        "patrol_id": "life_elder_R1",
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "Any"
+        ],
+        "types": [
+            "lifegen"
+        ],
+        "tags": [],
+        "patrol_art": "lg_elder_default",
+        "min_cats": 1,
+        "max_cats": 1,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "You see an old friend in the distance. They are hazy, their pelt interlaced with stars, smiling warmly in the prime of their life...",
+        "decline_text": "You squint and they are gone. Oh well, you must have been seeing things.",
+        "chance_of_success": 50,
+        "success_outcomes": [
+            {
+                "text": "You can hear their greeting like it was yesterday, and they look better than you remember. Their presence warms your aching bones. Before long though, they are gone, but you bask in the knowledge that you will see them soon in the stars.",
+                "exp": 10,
+                "weight": 20
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "Instead it is one of the warriors, looking a bit concerned. You know your mind is failing you so you reassure them that you mistook them for someone. Perhaps it's time for a nap?",
+                "exp": 0,
+                "weight": 20
+            }
+        ]
+    },
+    {
+        "patrol_id": "life_elder_R2",
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "Any"
+        ],
+        "types": [
+            "lifegen"
+        ],
+        "tags": [],
+        "patrol_art": "lg_elder_default",
+        "min_cats": 1,
+        "max_cats": 1,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "Just as you're ready to take an afternoon nap, you're startled awake by an eager kit nudging your side, begging to hear tales of cats from days past.",
+        "decline_text": "You pause, getting choked with emotion as memories of lost Clanmates flood your thoughts. Shaking your head, you decline. Even after many moons, your heart remains too burdened with grief.",
+        "chance_of_success": 50,
+        "success_outcomes": [
+            {
+                "text": "With a chuckle, you invite the kit in, enfolding them in your tail. You start to weave tales of your adventures with old friends, each more thrilling than the last. The kit is entranced, gripping your fur in wonder. You can't help but feel a surge of pride at getting the chance to honor your fallen Clanmates.",
+                "exp": 10,
+                "weight": 20
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "Your enthusiasm to share stories of old friends overtakes you, leading to tangents and ramblings that overwhelm the kit trying to keep up. Eventually, they lose interest and interrupt by announcing their boredom.",
                 "exp": 0,
                 "weight": 20
             }

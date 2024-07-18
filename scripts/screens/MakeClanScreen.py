@@ -162,7 +162,7 @@ class MakeClanScreen(Screens):
         self.white_patches_tint="None"
         self.kitten_sprite=0
         self.reverse=False
-        self.skill = None
+        self.skill = "Random"
         self.accessories=[]
         self.sex = "male"
         self.personality = "troublesome"
@@ -1348,7 +1348,7 @@ class MakeClanScreen(Screens):
         self.tint=choice(["pink", "gray", "red", "orange", "black", "yellow", "purple", "blue"]) if random.randint(1,5) == 1 else None
         self.skin=choice(Pelt.skin_sprites)
         self.white_patches_tint=choice(["offwhite", "cream", "darkcream", "gray", "pink"]) if random.randint(1,5) == 1 else None
-        self.reverse=False if random.randint(1,2) == 1 else True
+        self.reverse= False if random.randint(1,2) == 1 else True
         self.skill = random.choice(self.skills)
         self.sex = random.choice(["male", "female"])
         self.personality = choice(['troublesome', 'lonesome', 'impulsive', 'bullying', 'attention-seeker', 'charming', 'daring', 'noisy', 'nervous', 'quiet', 'insecure', 'daydreamer', 'sweet', 'polite', 'know-it-all', 'bossy', 'disciplined', 'patient', 'manipulative', 'secretive', 'rebellious', 'grumpy', 'passionate', 'honest', 'leader-like', 'smug'])
@@ -2015,6 +2015,8 @@ class MakeClanScreen(Screens):
                     self.your_cat.permanent_condition['born without a leg']['born_with'] = True
                 self.your_cat.accessory = self.accessory
                 self.your_cat.personality = Personality(trait=self.personality, kit_trait=True)
+                if self.skill == "Random":
+                    self.skill = random.choice(self.skills)
                 self.your_cat.skills.primary = Skill.get_skill_from_string(Skill, self.skill)
                 self.selected_cat = None
                 self.open_name_cat()
@@ -2219,7 +2221,7 @@ class MakeClanScreen(Screens):
         )
         self.text["leader"] = pygame_gui.elements.UILabel(
             scale(pygame.Rect((0, 90), (-1, -1))),
-            text=f"Your name: {game.clan.your_cat.name}",
+            text=f"Your name: {self.your_cat.name}",
             container=self.elements["text_container"],
             object_id=get_text_box_theme("#text_box_30_horizleft"),
             manager=MANAGER,

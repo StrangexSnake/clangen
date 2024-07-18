@@ -401,7 +401,7 @@ def create_new_cat_block(
             break
 
         # Set same as first mate
-        if match.group(1) == "mate" and give_mates:
+        if match.group(1) in ["mate", "mate_with_kits"] and give_mates:
             age = randint(Cat.age_moons[give_mates[0].age][0],
                           Cat.age_moons[give_mates[0].age][1])
             break
@@ -479,13 +479,21 @@ def create_new_cat_block(
             status = "kitten"
 
     # CHOOSE DEFAULT BACKSTORY BASED ON CAT TYPE, STATUS
-    if status in ("kitten", "newborn"):
-        chosen_backstory = choice(BACKSTORIES["backstory_categories"]["abandoned_backstories"])
-    elif status == "medicine cat" and cat_type == "former Clancat":
-        chosen_backstory = choice(["medicine_cat", "disgraced1"])
-    elif status == "medicine cat":
-        chosen_backstory = choice(["wandering_healer1", "wandering_healer2"])
+    if "newdfcat" in attribute_list:
+        if "oldstarclan" in attribute_list:
+                chosen_backstory = choice(["oldstarclan1", "oldstarclan2", "oldstarclan3"])
+        else:
+            chosen_backstory = choice(BACKSTORIES["backstory_categories"]["df_backstories"])
+    elif "newstarcat" in attribute_list:
+        chosen_backstory = choice(BACKSTORIES["backstory_categories"]["starclan_backstories"])
     else:
+        if status in ("kitten", "newborn"):
+            chosen_backstory = choice(BACKSTORIES["backstory_categories"]["abandoned_backstories"])
+        if status == "medicine cat":
+            if cat_type == "former Clancat":
+                chosen_backstory = choice(["medicine_cat", "disgraced1"])
+            else:
+                chosen_backstory = choice(["wandering_healer1", "wandering_healer2"])
         if cat_type == "former Clancat":
             x = "former_clancat"
         else:
@@ -1630,17 +1638,17 @@ def change_relationship_values(
 def get_cluster(trait):
         # Mapping traits to their respective clusters
         trait_to_clusters = {
-            "assertive": ["fierce", "bold", "daring", "confident", "adventurous", "arrogant", "competitive", "smug", "impulsive", "noisy"],
-            "brooding": ["bloodthirsty", "cold", "strict", "vengeful", "grumpy", "bullying", "secretive", "aloof", "stoic", "reserved"],
-            "cool": ["charismatic", "sneaky", "cunning", "arrogant", "charming", "manipulative", "leader-like", "passionate", "witty", "flexible", "mellow"],
+            "assertive": ["bloodthirsty", "fierce", "bold", "daring", "confident", "arrogant", "competitive", "smug", "impulsive", "noisy"],
+            "brooding": ["bloodthirsty", "cold", "gloomy", "strict", "vengeful", "grumpy", "bullying", "secretive", "aloof", "stoic", "reserved"],
+            "cool": ["charismatic", "cunning", "arrogant", "charming", "manipulative", "leader-like", "passionate", "witty", "flexible", "mellow", "flamboyant"],
             "upstanding": ["righteous", "ambitious", "strict", "competitive", "responsible", "bossy", "know-it-all", "leader-like", "smug", "loyal", "justified", "methodical"],
-            "introspective": ["lonesome", "righteous", "calm", "gloomy", "wise", "thoughtful", "quiet", "daydreamer", "flexible", "mellow"],
-            "neurotic": ["nervous", "insecure", "lonesome", "quiet", "secretive", "careful", "meek", "cowardly", "reserved", "emotional"],
+            "introspective": ["lonesome", "righteous", "calm", "wise", "thoughtful", "quiet", "daydreamer", "flexible", "mellow"],
+            "neurotic": ["nervous", "insecure", "lonesome", "quiet", "secretive", "careful", "meek", "cowardly", "emotional"],
             "silly": ["troublesome", "childish", "playful", "strange", "noisy", "attention-seeker", "rebellious", "bouncy", "energetic", "spontaneous"],
             "stable": ["loyal", "responsible", "wise", "faithful", "polite", "disciplined", "patient", "passionate", "witty", "trusting"],
             "sweet": ["compassionate", "faithful", "loving", "oblivious", "sincere", "sweet", "polite", "daydreamer", "trusting", "humble", "emotional"],
             "unabashed": ["childish", "confident", "bold", "shameless", "strange", "oblivious", "flamboyant", "impulsive", "noisy", "honest", "spontaneous"],
-            "unlawful": ["bloodthirsty", "sneaky", "rebellious", "manipulative", "obsessive", "aloof", "stoic", "cunning", "troublesome"]
+            "unlawful": ["adventurous", "sneaky", "rebellious", "manipulative", "obsessive", "aloof", "stoic", "cunning", "troublesome"]
         }
         clusters = [key for key, values in trait_to_clusters.items() if trait in values]
 
@@ -1666,7 +1674,7 @@ def get_leader_life_notice() -> str:
     if lives > 0:
         text = f"The leader has {int(lives)} lives left."
     elif lives <= 0:
-        if game.clan.instructor.df is False:
+        if game.clan.followingsc:
             text = 'The leader has no lives left and has travelled to StarClan.'
         else:
             text = 'The leader has no lives left and has travelled to the Dark Forest.'
