@@ -1064,7 +1064,7 @@ class MurderScreen(Screens):
 
     def print_chances(self, cat_to_murder, accomplice):
         
-        dont_print = False
+        dont_print = True
         if dont_print is True:
             return
         # not deleting the function bc chances will need more tweaking in the future
@@ -1534,7 +1534,7 @@ class MurderScreen(Screens):
                     if "any" not in murder_dict["victim_status"]:
                         continue
 
-            if "relatonship" in murder_dict and murder_dict["relationship"]:
+            if "relationship" in murder_dict and murder_dict["relationship"]:
                 if "mates" in murder_dict["relationship"]:
                     if cat_to_murder not in you.mates:
                         continue
@@ -1671,7 +1671,7 @@ class MurderScreen(Screens):
 
         other_clan = choice(game.clan.all_clans)
         ceremony_txt = ceremony_txt.replace('c_n', game.clan.name)
-        ceremony_txt = ceremony_txt.replace("o_c", str(other_clan.name))
+        ceremony_txt = ceremony_txt.replace("o_c_n", str(other_clan.name) + "Clan")
     
         medcats = []
         for cat in Cat.all_cats_list:
